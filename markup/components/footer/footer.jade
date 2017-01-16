@@ -1,2 +1,14 @@
 mixin footer(data)
-    footer.footer
+	footer.footer
+		.footer__wrapper
+			a(href="#" title="").footer__logo
+			.footer-menu__wrapper
+				+menu(['О нас', 'Контакты', 'Реклама'])._footer
+				.footer__copyrights © 2006-2012 MosMama.ru ВСЕ ПРАВА ЗАЩИЩЕНЫ.
+			.footer-social
+				.footer-social__item
+					a(href="#").facebook
+				.footer-social__item
+					a(href="#").vkontakte
+				.footer-social__item
+					a(href="#").odnoklassniki

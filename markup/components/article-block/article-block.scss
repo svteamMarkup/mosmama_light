@@ -1,0 +1,53 @@
+.article-block {
+	width: 294px;
+	margin-bottom: 56px;
+	&__category {
+		position: absolute;
+		top: 9px;
+		right: 10px;
+		color: $light-silver;
+		padding: 7px 8px 4px 8px;
+		background-color: $white;
+		border: 1px solid #9d9d9d;
+		text-transform: uppercase;
+	}
+	&__photo {
+		margin-bottom: 8px;
+		position: relative;
+	}
+	&__title {
+		font-family: 'merriweather';
+		color: $light-black;
+		margin-bottom: 10px;
+		display: block;
+		text-decoration: none;
+		@include transition;
+		&:hover {
+			color: $dark-purple;
+		}
+	}
+	&__description {
+		color: $light-silver;
+		font-size: 15px;
+		font-style: italic;
+	}
+	&._large {
+		width: 462px;
+		height: 435px;
+		padding: 13px 0 20px 0;
+		box-sizing: border-box;
+		&._purple {
+			background-color: #fbeef3;
+		}
+		&._silver {
+			background-color: #eef3fb;
+		}
+		.article-block__inner {
+			padding: 0 16px 0 13px;
+		}
+		.article-block__category {
+			right: 6px;
+			top: 12px;
+		}
+	}
+}

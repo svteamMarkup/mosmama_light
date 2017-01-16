@@ -1,0 +1,22 @@
+doctype html
+html(class="no-js", lang="ru")
+
+	include ../components/head/head
+	include ../components/header/header
+	include ../components/menu/menu
+	include ../components/article-block/article-block
+	include ../components/article-block-second/article-block-second
+	include ../components/list-sub-categories/list-sub-categories
+	include ../components/footer/footer
+
+	head
+		+head(head.defaults)
+	body
+		block header
+			+header
+		main.main
+			block content
+		block footer
+			+footer
+		//- Main scripts. You can replace it, but I recommend you to leave it here
+		script(src='%=static=%js/main%=hash=%%=min=%.js')

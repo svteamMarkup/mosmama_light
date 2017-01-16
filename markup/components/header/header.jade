@@ -1,0 +1,13 @@
+mixin header(data)
+	header.header
+		.header__wrapper
+			a(href="#" title="").header__logo
+			+menu(['Беременность и роды', 'Новорожденный', 'Развитие ребенка', 'Здоровье'])
+			.header-search
+				.header-search__mobile
+				.header-search__wrapper
+					.header-search__form
+						input(type="text" placeholder="Поиск").input-form
+						input.button._blue._search-submit(type="submit" value="Найти")
+				.header-search__form
+					.header-search__icon

@@ -1,0 +1,29 @@
+.header {
+	&__wrapper {
+		@extend .main;
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		padding: 19px 20px 14px 20px;
+		background-color: $white;
+		border-bottom: 1px solid #eee;
+	}
+	&__logo {
+		@include bg($header-logo);
+	}
+	&-search {
+		margin-left: 28px;
+		&__mobile {
+			display: none;
+		}
+		&__wrapper {
+			display: none;
+		}
+		&__icon {
+			background-color: #f6f6f6;
+			border-radius: 50%;
+			@include bg($search-icon);
+			cursor: pointer;
+		}
+	}
+}

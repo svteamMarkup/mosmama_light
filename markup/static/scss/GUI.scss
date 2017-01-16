@@ -1,2 +1,38 @@
 // GUI stylies of the project
 // For example, styles of the links, buttons and so on.
+.button {
+	display: inline-block;
+	cursor: pointer;
+	&._purple {
+		border: 1px solid #ecabc3;
+		color: $light-purple;
+		text-transform: uppercase;
+		@include transition;
+		&:hover {
+			@include opacity;
+		}
+	}
+	&._big {
+		padding: 22px 64px 14px 64px;
+	}
+	&__wrapper {
+		text-align: center;
+	}
+}
+.main-title {
+	text-transform: uppercase;
+	font-weight: bold;
+	margin-bottom: 28px;
+	&._purple {
+		color: $light-purple;
+	}
+}
+._text-center {
+	text-align: center;
+}
+._middle-title {
+	font-size: 18px;
+}
+._big-title {
+	font-size: 23px;
+}

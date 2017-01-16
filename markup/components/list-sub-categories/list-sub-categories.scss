@@ -1,0 +1,28 @@
+.list-sub-categories {
+	display: inline-block;
+	padding: 0 46px;
+	background-color: #f6f6f6;
+	&__list {
+		display: flex;
+		align-items: center;
+	}
+	&__item {
+		margin-right: 32px;
+		padding: 14px 0 14px 0;
+		&:last-child {
+			margin-right: 0;
+		}
+		a {
+			color: #686868;
+			text-decoration: none;
+			font-size: 14px;
+			@include transition;
+			border-bottom: 1px solid transparent;
+			padding-bottom: 3px;
+			&:hover {
+				color: $light-purple;
+				border-color: #f3c9d9;
+			}
+		}
+	}
+}

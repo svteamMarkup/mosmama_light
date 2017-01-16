@@ -1,22 +1,46 @@
 // Common styles of the project
-
 html, body {
     height: 100%;
 }
-
-.page {
-    
+body {
+	font-size: $default-font-size;
+	font-family: 'roboto_condensed';
+	color: $black;
+	background-color: #fbf6f6;
+}
+input, textarea {
+    outline: none;
+    border: none;
+}
+ul li {
+	list-style: none;
+}
+.main {
+	max-width: 1000px;
+	width: 100%;
+	margin: auto;
+	padding: 0 20px;
+	box-sizing: border-box;
+	background-color: $white;
+}
+.page-content {
+	padding: 29px 0 50px 0;
 }
 
-.page__wrapper {
-    min-height: 100%;
-    margin-bottom: -50px;
+.two-columns {
+	/* margin-bottom: 51px; */
+	display: flex;
+	justify-content: space-between;
+	&.first {
+		justify-content: flex-start;
+	}
+	&__right {
+		margin-left: 29px;
+	}	
+}
+.three-columns {
+	display: flex;
+	flex-wrap: wrap;	
+	justify-content: space-between;	
 }
 
-* html .page__wrapper {
-    height: 100%;
-}
-
-.page__buffer {
-    height: 50px;
-}

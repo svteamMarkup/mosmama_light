@@ -1,0 +1,46 @@
+.footer {
+	&__wrapper {
+		@extend .main;
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		background-color: #f6f6f6;
+		padding: 19px 20px 14px 20px;
+	}
+	&__logo {
+		@include bg($header-logo);
+	}
+	&__copyrights {
+		font-size: 10px;
+		color: #383838;
+		margin-top: 7px;
+		margin-left: 32px;
+		text-transform: uppercase;
+	}
+	&-social {
+		display: flex;
+		justify-content: space-between;
+		margin-left: 274px;
+		&__item {
+			/* margin: 0 39px; */
+			padding: 12px 28px 14px 28px;
+			border-left: 1px solid #e1e1e1;
+			@include transition;
+			&:hover {
+				@include opacity;
+			}
+			a {
+				display: block;
+			}
+			.facebook {
+				@include bg($facebook);
+			}
+			.vkontakte {
+				@include bg($vkontakte);
+			}
+			.odnoklassniki {
+				@include bg($odnoklassniki);
+			}
+		}
+	}
+}

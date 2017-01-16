@@ -1,0 +1,43 @@
+.menu {
+	margin-left: 32px;
+	&__list {
+		display: flex;
+		justify-content: space-between;
+	}
+	&__item {
+		margin-right: 50px;
+		position: relative;
+		&:last-child {
+			margin-right: 0;
+		}
+		a {
+			font-size: 18px;
+			color: $dark-silver;
+			text-transform: uppercase;
+			text-decoration: none;
+			@include transition;
+			&:hover {
+				color: lighten($dark-silver, 5%);
+			}
+		}
+		&:first-child{
+			padding-left: 40px;
+			&:before {
+				content: '';
+				position: absolute;
+				top: 3px;
+				left: 0;
+				@include bg($menu-mobile);
+				cursor: pointer;
+			}
+		}
+	}
+	&._footer {
+		.menu__item:first-child {
+			padding-left: 0;
+			&:before {
+				display: none;
+			}
+		}
+	}
+}
