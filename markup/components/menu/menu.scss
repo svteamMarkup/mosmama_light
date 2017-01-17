@@ -3,10 +3,20 @@
 	&__list {
 		display: flex;
 		justify-content: space-between;
+		position: relative;
+		&:before {
+			content: '';
+			position: absolute;
+			top: 3px;
+			left: 0;
+			@include bg($menu-mobile);
+			cursor: pointer;
+		}
 	}
 	&__item {
 		margin-right: 50px;
 		position: relative;
+		box-sizing: border-box;
 		&:last-child {
 			margin-right: 0;
 		}
@@ -20,19 +30,17 @@
 				color: lighten($dark-silver, 5%);
 			}
 		}
-		&:first-child{
-			padding-left: 40px;
-			&:before {
-				content: '';
-				position: absolute;
-				top: 3px;
-				left: 0;
-				@include bg($menu-mobile);
-				cursor: pointer;
-			}
+		&._active {
+			padding: 3px;
+			border: 1px dotted $light-purple;
 		}
 	}
 	&._footer {
+		.menu__list {
+			&:before {
+				display: none;
+			}
+		}
 		.menu__item:first-child {
 			padding-left: 0;
 			&:before {
@@ -41,3 +49,4 @@
 		}
 	}
 }
+

@@ -5,11 +5,14 @@
 	cursor: pointer;
 	&._purple {
 		border: 1px solid #ecabc3;
-		color: $light-purple;
 		text-transform: uppercase;
+		color: $black;
 		@include transition;
 		&:hover {
 			@include opacity;
+		}
+		&._purple-text {
+			color: $light-purple;
 		}
 	}
 	&._big {

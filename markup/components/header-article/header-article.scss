@@ -28,24 +28,25 @@
 	}
 	&-button__wrapper {
 		position: relative;
-		&:before,
 		&:after {
-			content: ''; 
-	    	position: absolute;
-	    	left: 20px; bottom: -20px;
-	    	border: 10px solid transparent;
-	    	border-top: 10px solid green;
-		}
-		&:after {
-			content: '';
-	    	position: absolute;
-	    	top: 0;
-	    	border: 21px solid transparent;
-	    	border-left: 20px solid #1456b3;
-		}
+		    content: '';
+		    border: 2px solid #ecabc3;
+		    display: block;
+		    right: -14px;
+		    top: 50%;
+		    margin: -14px 0 0 -19px;
+		    border-right: none;
+		    border-top: none;
+		    border-width: 1px;
+		    width: 28px;
+		    height: 28px;
+		    transform: rotate(223deg);
+		    position: absolute;
+	    }
 	}
 	&__button {
 		font-size: 14px;
 		text-decoration: none;
+		border-right-width: 0!important;
 	}
 }
