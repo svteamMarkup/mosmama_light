@@ -7,6 +7,7 @@
 		padding: 19px 20px 14px 20px;
 		background-color: $white;
 		border-bottom: 1px solid #eee;
+		position: relative;
 	}
 	&__logo {
 		@include bg($header-logo);
@@ -17,13 +18,43 @@
 			display: none;
 		}
 		&__wrapper {
-			display: none;
+			.input-form {
+				border: 1px solid #e4e3e3;
+				background-color: #f7f6f6;
+				border-radius: 16px;
+				padding-left: 14px;
+				font-style: italic;
+				font-size: 18px;
+				color: $dark-silver;
+				height: 31px;
+				width: 395px;
+				display: none;
+				box-sizing: border-box;
+				position: absolute;
+				right: 0;
+			}
+			&._active {
+				.input-form {
+					right: 0;
+					position: absolute;
+				}
+			}
+		}
+		&__form {
+			&-inner {
+				position: relative;
+				right: -37px;
+    			top: -17px;
+			}
 		}
 		&__icon {
-			background-color: #f6f6f6;
+			background-color: #efeeee;
 			border-radius: 50%;
 			@include bg($search-icon);
 			cursor: pointer;
+			position: absolute;
+	    	right: 6px;
+			top: 3px;
 		}
 	}
 }

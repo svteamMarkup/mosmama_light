@@ -1,7 +1,8 @@
 mixin article-block-second(imagesize)
-	.article-block-second
+	- var modiffer = attributes.class || ''
+	.article-block-second(class="#{modiffer}")
 		.article-block-second__photo
-			img(src="http://placehold.it/#{imagesize}")
+			img(src="http://placehold.it/#{imagesize}" alt="")
 		.article-block-second__content
 			.article-block-second__category Беременность и роды	
 			a(href="#" title="").article-block-second__title Рефлексы новорожденных

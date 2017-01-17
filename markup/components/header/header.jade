@@ -7,7 +7,8 @@ mixin header(data)
 				.header-search__mobile
 				.header-search__wrapper
 					.header-search__form
-						input(type="text" placeholder="Поиск").input-form
-						input.button._blue._search-submit(type="submit" value="Найти")
-				.header-search__form
-					.header-search__icon
+						form(method="GET" action="").header-search__form-inner
+								input(type="text" placeholder="Введите слово для поиска").input-form
+								input(type="submit" value="").header-search__icon
+
+					

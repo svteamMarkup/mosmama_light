@@ -1,0 +1,82 @@
+.article-content {
+	h1 {
+		font-size: 31px;
+		font-family: 'merriweather';
+		font-weight: bold;
+		&._purple {
+			color: $light-purple;
+		}
+	}
+	h3 {
+		font-size: 20px;
+		font-weight: bold;
+		text-transform: uppercase;
+		margin-bottom: 21px;
+		&._purple {
+			color: $light-purple;
+		}
+	}
+	p {
+		font-size: 15px;
+		color: $light-black;
+		margin-bottom: 24px;
+		font-family: 'merriweather';
+	}
+	p._blue-bg {
+		background-color: #eef3fb;
+		padding: 26px 50px 20px 50px;
+		color: #6f9ec0;
+		font-family: 'merriweather';
+		font-style: italic;
+		position: relative;
+		margin-bottom: 29px;
+		&:before {
+			content: '';
+			position: absolute;
+			top: 25px;
+			left: 18px;
+			@include bg($double-arrow);
+		}
+	}
+	.blue-marker {
+		padding: 0;
+		li {
+			position: relative;
+			padding-left: 38px;
+			margin-bottom: 30px;
+			&:before {
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 0;
+				@include bg($blue-arrow);
+			}
+		}
+	}	
+	.number-marker {
+		counter-reset: point; /* задаем переменную для счетчика */
+		padding: 0;
+		li {
+			position: relative;
+			padding-left: 38px;
+			margin-bottom: 30px;
+			&:last-child {
+				margin-bottom: 0;
+			}
+			&:before {
+				content: counter(point); /* выводим значение переменной */
+				counter-increment: point 1; /* увеличваем счетчик на 1 */
+				position: absolute;
+				left: 0;
+				top: 0;
+				height: 26px;
+				width: 26px;
+				color: #9ccbec;
+				border: 2px solid #9ccbec;
+				border-radius: 50%;
+				text-align: center;
+				line-height: 25px;
+			}
+		}
+	}
+}

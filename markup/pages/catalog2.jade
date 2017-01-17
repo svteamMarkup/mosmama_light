@@ -1,0 +1,37 @@
+extends ./layout.jade
+
+block content
+	+list-sub-categories
+	.page-content
+		.main-title._middle-title Течение беременности
+		.two-columns.first
+			.two-columns__left
+				+article-block('435x283')._large._purple
+			.two-columns__right
+				+article-block-second('175x115')
+				+article-block-second('175x115')
+				+article-block-second('175x115')._last
+		.content-sidebar__wrapper
+			.content
+				.one-column
+					+article-block-second('235x154')._full-width
+					+article-block-second('235x154')._full-width
+					+article-block-second('235x154')._full-width
+					+article-block-second('235x154')._full-width
+					+article-block-second('235x154')._full-width
+					+article-block-second('235x154')._full-width._last
+				.button__wrapper
+					.button._purple._big Показать еще статьи
+			.right-sidebar
+				.one-column._silver
+					+article-block-third('89x66')
+					+article-block-third('89x66')
+					+article-block-third('89x66')
+					+article-block-third('89x66')
+					+article-block-third('89x66')
+					+article-block-third('89x66')
+					+article-block-third('89x66')
+					+article-block-third('89x66')
+					+article-block-third('89x66')
+				+widget._vkontakte
+

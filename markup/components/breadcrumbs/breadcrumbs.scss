@@ -1,0 +1,37 @@
+.breadcrumbs {
+	margin-bottom: 23px;
+	@media screen and(max-width: 960px) {
+		padding-top: 15px;
+		display: table;
+    	margin: auto;
+	}
+	@media screen and(max-width: 760px) {
+		padding-top: 15px;
+		display: table;
+    	margin: auto;
+	}
+	&__category-wrapper {
+		display: flex;
+		justify-content: flex-start;
+	}
+	&__category {
+		color: #929292;
+		font-size: 12px;
+		margin-right: 26px;
+		text-decoration: none;
+		text-transform: uppercase;
+		padding-left: 12px;
+		position: relative;
+		&:before {
+			content: '';
+			position: absolute;
+			top: 4px;
+			left: 0;
+			@include bg($small-arrow);			
+		}
+	}
+	&__title {
+		font-size: 38px;
+		margin-top: 10px;
+	}
+}

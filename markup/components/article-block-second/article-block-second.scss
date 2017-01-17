@@ -3,7 +3,7 @@
 	justify-content: space-between;
 	margin-bottom: 41px;
 	width: 447px;
-	&:last-child {
+	&._last {
 		margin-bottom: 0;
 	}
 	&__content {
@@ -31,5 +31,8 @@
 		color: $light-silver;
 		font-size: 15px;
 		font-style: italic;
+	}
+	&._full-width {
+		width: 100%;
 	}
 }

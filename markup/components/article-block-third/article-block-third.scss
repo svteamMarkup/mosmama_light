@@ -1,0 +1,21 @@
+.article-block-third {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	margin-bottom: 22px;
+	&:last-child {
+		margin-bottom: 0;
+	}
+	&__title {
+		font-size: 13px;
+		color: $light-black;
+		font-family: 'merriweather';
+		line-height: 21px;
+		margin-left: 15px;
+		text-decoration: none;
+		@include transition;
+		&:hover {
+			color: $dark-purple;
+		}
+	}
+}

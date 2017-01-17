@@ -1,0 +1,51 @@
+.header-article {
+	display: none;
+	&._fixed {
+		position: fixed;
+		display: block;
+		background-color: $white;
+		border-bottom: 1px solid #eee;
+		left: 0;
+		right: 0;
+		top: 0;
+		z-index: 99;
+	}
+	&__wrapper {
+		@extend .main;
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		padding: 19px 20px 14px 20px;
+	}
+	&__logo {
+		@include bg($header-logo);
+	}	
+	&__title {
+		margin-bottom: 0;
+		font-family: 'merriweather';
+		font-weight: bold;
+		margin-left: 28px;
+	}
+	&-button__wrapper {
+		position: relative;
+		&:before,
+		&:after {
+			content: ''; 
+	    	position: absolute;
+	    	left: 20px; bottom: -20px;
+	    	border: 10px solid transparent;
+	    	border-top: 10px solid green;
+		}
+		&:after {
+			content: '';
+	    	position: absolute;
+	    	top: 0;
+	    	border: 21px solid transparent;
+	    	border-left: 20px solid #1456b3;
+		}
+	}
+	&__button {
+		font-size: 14px;
+		text-decoration: none;
+	}
+}

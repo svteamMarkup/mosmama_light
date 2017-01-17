@@ -1,0 +1,39 @@
+extends ./layout.jade
+
+block content
+	+list-sub-categories
+	+header-article
+	.page-content
+		.content-sidebar__wrapper
+			.content
+				+breadcrumbs
+				+article-content
+				.share-advice
+					.share-advice__title Не забудь поделиться советом с подругами.
+					+social
+				.disqus-title Обсуждение
+				+comments
+			.right-sidebar
+				.one-column._silver
+					+article-block-third('89x66')
+					+article-block-third('89x66')
+					+article-block-third('89x66')
+					+article-block-third('89x66')
+					+article-block-third('89x66')
+					+article-block-third('89x66')
+					+article-block-third('89x66')
+					+article-block-third('89x66')
+					+article-block-third('89x66')
+				+widget._vkontakte
+		.similar-articles
+			.main-title._middle-title._text-center Похожие статьи
+			.three-columns
+				+article-block('294x192')
+				+article-block('294x192')
+				+article-block('294x192')
+				+article-block('294x192')
+				+article-block('294x192')
+				+article-block('294x192')
+		.button__wrapper
+			.button._purple._big Показать еще статьи
+
