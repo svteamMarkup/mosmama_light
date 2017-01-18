@@ -24,10 +24,13 @@
 		margin-bottom: 0;
 		font-family: 'merriweather';
 		font-weight: bold;
+		text-transform: none;
 		margin-left: 28px;
+		width: 568px;
 	}
 	&-button__wrapper {
 		position: relative;
+		margin-left: 63px;
 		&:after {
 		    content: '';
 		    border: 2px solid #ecabc3;

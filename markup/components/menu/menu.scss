@@ -1,49 +1,109 @@
 .menu {
 	margin-left: 32px;
+	@media screen and(max-width: 760px) {
+		
+	}
+	&__mobile {
+		display: none;
+		@media screen and(max-width: 760px) {
+			display: block;
+			order: 1;
+			content: '';
+			position: absolute;
+			top: 33px;
+			left: 12px;
+			@include bg($menu-mobile);
+			cursor: pointer;
+		}	
+	}
 	&__list {
 		display: flex;
 		justify-content: space-between;
 		position: relative;
+		@media screen and(max-width: 760px) {
+			display: none;
+			width: 100%;
+			position: absolute;
+			top: 57px;
+			left: 0;
+			z-index: 999;
+    		width: 100%;
+		}
 		&:before {
 			content: '';
 			position: absolute;
-			top: 3px;
+			top: 12px;
 			left: 0;
 			@include bg($menu-mobile);
 			cursor: pointer;
+			@media screen and(max-width: 760px) {
+				display: none;
+			}	
 		}
 	}
 	&__item {
-		margin-right: 50px;
+		margin-right: 25px;
 		position: relative;
 		box-sizing: border-box;
+		@media screen and(max-width: 760px) {
+			width: auto;
+			background-color: $white;
+			margin: 0;
+			text-align: center;
+		}	
+		&:first-child {
+			margin-left: 36px;
+			@media screen and(max-width: 760px) {
+				margin-left: 0;
+			}
+		}
 		&:last-child {
 			margin-right: 0;
 		}
 		a {
+			padding: 8px 9px;
 			font-size: 18px;
+			display: block;
 			color: $dark-silver;
 			text-transform: uppercase;
 			text-decoration: none;
+			border: 1px dashed transparent;
 			@include transition;
+			@media screen and(max-width: 760px) {
+				border: none;
+				border-bottom: 1px solid $light-purple;
+			}
 			&:hover {
-				color: lighten($dark-silver, 5%);
+				border-color: #f3c9d9; 
+				color: $light-purple;
 			}
 		}
 		&._active {
-			padding: 3px;
-			border: 1px dotted $light-purple;
+			a {
+				border: 1px dashed #f3c9d9;
+				color: $light-purple;
+			}
 		}
 	}
 	&._footer {
 		.menu__list {
+			@media screen and(max-width: 760px) {
+				display: none;
+			}
 			&:before {
 				display: none;
 			}
 		}
 		.menu__item {
-			border: none;
-			padding: 0;
+			margin-left: 0;
+			a {
+				border: none;
+				padding: 0;
+				color: $dark-silver;
+				&:hover {
+					color: $light-purple;
+				}
+			}
 			&:first-child {
 				padding-left: 0;
 			}

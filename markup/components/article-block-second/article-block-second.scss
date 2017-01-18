@@ -3,17 +3,41 @@
 	justify-content: space-between;
 	margin-bottom: 41px;
 	width: 447px;
+	@media screen and(max-width: 760px) {
+		width: auto;
+		margin-bottom: 20px;
+	}	
+	@media screen and(max-width: 516px) {
+		display: block;
+		width: 250px;
+		margin: auto;
+		margin-bottom: 10px;
+	}
 	&._last {
 		margin-bottom: 0;
 	}
+	&__photo {
+		img {
+			@media screen and(max-width: 760px) {
+				width: 100%;
+				height: auto;
+			}
+		}
+	}
 	&__content {
 		margin-left: 18px;
+		@media screen and(max-width: 516px) {
+			margin-left: 0;
+		}		
 	}
 	&__category {
 		font-size: 12px;
 		color: $light-silver;
 		margin-bottom: 10px;
 		text-transform: uppercase;
+		@media screen and(max-width: 516px) {
+			margin-bottom: 5px;
+		}
 	}
 	&__title {
 		font-family: 'merriweather';
@@ -26,6 +50,9 @@
 		&:hover {
 			color: $dark-purple;
 		}
+		@media screen and(max-width: 516px) {
+			margin-bottom: 5px;
+		}	
 	}
 	&__description {
 		color: $light-silver;

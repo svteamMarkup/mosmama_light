@@ -29,6 +29,9 @@
 			left: 0;
 			@include bg($small-arrow);			
 		}
+		&:hover {
+			text-decoration: underline;
+		}
 	}
 	&__title {
 		font-size: 38px;

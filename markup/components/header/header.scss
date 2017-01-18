@@ -8,12 +8,20 @@
 		background-color: $white;
 		border-bottom: 1px solid #eee;
 		position: relative;
+		@media screen and(max-width: 760px) {
+			padding: 8px 10px;
+		}
 	}
 	&__logo {
 		@include bg($header-logo);
+		@media screen and(max-width: 760px) {
+			order: 2;
+			margin: auto;
+		}
 	}
 	&-search {
 		margin-left: 28px;
+		order: 3;
 		&__mobile {
 			display: none;
 		}
@@ -37,6 +45,14 @@
 				.input-form {
 					right: 0;
 					position: absolute;
+					@media screen and(max-width: 760px) {
+						top: 36px;
+					}
+					@media screen and(max-width: 516px) {
+						width: 303px;
+						right: 0;
+					}
+					top: 36px;
 				}
 			}
 		}
@@ -45,6 +61,9 @@
 				position: relative;
 				right: -37px;
     			top: -17px;
+    			@media screen and(max-width: 516px)  {
+    				right: 0;
+    			}
 			}
 		}
 		&__icon {

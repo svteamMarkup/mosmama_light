@@ -6,9 +6,21 @@
 		align-items: center;
 		background-color: #f6f6f6;
 		padding: 19px 20px 14px 20px;
+		@media screen and(max-width: 516px) {
+			padding: 17px 10px;
+		}
 	}
 	&__logo {
 		@include bg($header-logo);
+		@media screen and(max-width: 516px) {
+			margin: auto;
+			display: block;
+		}
+	}
+	@media screen and(max-width: 516px) {
+		&-menu__wrapper {
+			display: none;
+		}
 	}
 	&__copyrights {
 		font-size: 10px;
@@ -20,7 +32,10 @@
 	&-social {
 		display: flex;
 		justify-content: space-between;
-		margin-left: 274px;
+		margin-left: 324px;
+		@media screen and(max-width: 516px) {
+			display: none;
+		}
 		&__item {
 			/* margin: 0 39px; */
 			padding: 12px 28px 14px 28px;
