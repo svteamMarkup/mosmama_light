@@ -1,14 +1,41 @@
 .list-sub-categories {
-	display: inline-block;
-	padding: 0 46px;
-	background-color: #f6f6f6;
+	@media screen and(max-width: 960px) {
+		border-bottom: 1px solid $black;
+	}
+	&__wrapper {
+		@extend .main;
+		background-color: #f6f6f6;
+		@media screen and(max-width: 960px) {
+			position: relative;
+		}
+	}
+	&__mobile {
+		display: none;
+		@media screen and(max-width: 960px) {
+			padding: 8px 0;
+			display: block;
+		}
+	}
 	&__list {
 		display: flex;
 		align-items: center;
+		@media screen and(max-width: 960px) {
+			display: none;
+			position: absolute;
+		    left: 0;
+		    width: 100%;
+		    top: 37px;
+		    z-index: 99;
+		    background-color: #f6f6f6;
+		}		
 	}
 	&__item {
 		margin-right: 32px;
-		padding: 14px 0 14px 0;
+		padding: 14px 0;
+		@media screen and(max-width: 960px) {
+			text-align: center;
+			margin-right: 0;
+		}	
 		&:last-child {
 			margin-right: 0;
 		}

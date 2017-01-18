@@ -27,6 +27,9 @@
 	}
 	&__wrapper {
 		text-align: center;
+		@media screen and(max-width: 516px) {
+			margin-bottom: 20px;
+		}
 	}
 }
 .main-title {
@@ -34,11 +37,12 @@
 	font-weight: bold;
 	font-size: 20px;
 	margin-bottom: 28px;
+	@media screen and(max-width: 760px) {
+		margin-bottom: 16px;
+		text-align: center;
+	}
 	&._purple {
 		color: $light-purple;
-	}
-	@media screen and(max-width: 516px) {
-		margin-bottom: 16px;
 	}
 }
 ._text-center {
@@ -55,7 +59,7 @@
 }
 ._big-title {
 	font-size: 23px;
-	@media screen and(max-width: 760px) {
+	@media screen and(max-width: 960px) {
 		font-size: 18px;
 	}
 }

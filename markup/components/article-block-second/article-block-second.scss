@@ -3,7 +3,7 @@
 	justify-content: space-between;
 	margin-bottom: 41px;
 	width: 447px;
-	@media screen and(max-width: 760px) {
+	@media screen and(max-width: 960px) {
 		width: auto;
 		margin-bottom: 20px;
 	}	
@@ -18,7 +18,7 @@
 	}
 	&__photo {
 		img {
-			@media screen and(max-width: 760px) {
+			@media screen and(max-width: 960px) {
 				width: 100%;
 				height: auto;
 			}
@@ -61,5 +61,8 @@
 	}
 	&._full-width {
 		width: 100%;
+		@media screen and(max-width: 516px) {
+			width: 250px;
+		}
 	}
 }

@@ -86,6 +86,7 @@
 		}
 	}
 	&._footer {
+		margin-left: 32px;
 		.menu__list {
 			@media screen and(max-width: 960px) {
 				display: none;

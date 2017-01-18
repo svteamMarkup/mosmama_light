@@ -1,13 +1,13 @@
 mixin header(data)
 	header.header
 		.header__wrapper
-			a(href="#" title="").header__logo
+			a(href="#" title="").header__logo Mosmama.ru
 			+menu(['Беременность и роды', 'Новорожденный', 'Развитие ребенка', 'Здоровье'])
 			.header-search
 				.header-search__mobile
 				.header-search__wrapper
 					.header-search__form
-						form(method="GET" action="").header-search__form-inner
+						form(method="GET" action="")
 								input(type="text" placeholder="Введите слово для поиска").input-form
 								input(type="submit" value="").header-search__icon
 

@@ -19,10 +19,14 @@ html(class="no-js", lang="ru")
 	head
 		+head(head.defaults)
 	body
+		block variables
+			- var page = 'default';
 		block header
 			+header
-		main.main
-			block content
+			if (page != 'default')
+				+list-sub-categories
+			main.main
+				block content
 		block footer
 			+footer
 		//- Main scripts. You can replace it, but I recommend you to leave it here

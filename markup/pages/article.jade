@@ -1,10 +1,9 @@
 extends ./layout.jade
-
+block variables
+	- var page = 'article';
 block content
-	+list-sub-categories
-	+header-article
 	.page-content
-		.content-sidebar__wrapper
+		.page-content__inner
 			.content
 				+breadcrumbs
 				+article-content

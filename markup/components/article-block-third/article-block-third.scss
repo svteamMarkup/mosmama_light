@@ -6,6 +6,14 @@
 	&:last-child {
 		margin-bottom: 0;
 	}
+	&__photo {
+		img {
+			@media screen and(max-width: 960px) {
+				width: 100%;
+    			height: auto;
+    		}
+		}
+	}
 	&__title {
 		font-size: 13px;
 		color: $light-black;

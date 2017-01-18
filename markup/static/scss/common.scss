@@ -27,7 +27,8 @@ ul li {
 	}
 }
 .page-content {
-	padding: 29px 0 50px 0;
+	padding-top: 29px;
+	padding-bottom: 50px;
 	@media screen and(max-width: 516px) {
 		padding-top: 20px;
 		padding-bottom: 25px;
@@ -35,7 +36,6 @@ ul li {
 }
 
 .two-columns {
-	/* margin-bottom: 51px; */
 	display: flex;
 	justify-content: space-between;
 	margin-bottom: 47px;
@@ -43,28 +43,30 @@ ul li {
 		display: block;
 		margin-bottom: 18px;
 	}
-	&.first {
+	&._first {
 		justify-content: flex-start;
 		@media screen and(max-width: 960px) {
 			display: flex;
+			margin-bottom: 15px;
 		}
 		@media screen and(max-width: 516px) {
 			display: block;
-		}	
+		}
 	}
 	&__left {
 		@media screen and(max-width: 760px) {
 			margin-bottom: 10px;
+			width: 50%;
 		}	
 		@media screen and(max-width: 516px) {
-			margin-bottom: 10px;
 			width: auto;
 		}
 	}
 	&__right {
 		margin-left: 29px;
 		@media screen and(max-width: 760px) {
-			margin-left: 10px
+			margin-left: 10px;
+			width: 50%;
 		}
 		@media screen and(max-width: 516px) {
 			margin-left: 0;
@@ -85,22 +87,44 @@ ul li {
 }
 .one-column {
 	margin-bottom: 98px;
+	@media screen and(max-width: 760px) {
+		margin-bottom: 20px;
+	}	
 	&._silver {
 		padding: 11px 8px 19px 11px;
 		background-color: #f6f6f6;
 		margin-bottom: 63px;
+		@media screen and(max-width: 760px) {
+			margin-bottom: 20px;
+		}		
 	}
 }
-.content-sidebar__wrapper {
+.page-content__inner {
 	display: flex;
 	justify-content: space-between;
+	@media screen and(max-width: 516px) {
+		display: block;
+	}
 	.content {
 		max-width: 635px;
 		width: 100%;
+		@media screen and(max-width: 760px) {
+			width: 50%;
+		}
+		@media screen and(max-width: 516px) {
+			width: auto;
+		}		
 	}
 	.right-sidebar {
 		max-width: 300px;
 		width: 100%;
+		@media screen and(max-width: 760px) {
+			width: 50%;
+		}		
+		@media screen and(max-width: 516px) {
+		    width: 250px;
+    		margin: auto;
+    	}
 	}
 	.disqus-title {
 		font-size: 20px;	
