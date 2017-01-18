@@ -1,11 +1,11 @@
 .menu {
 	margin-left: 32px;
-	@media screen and(max-width: 760px) {
-		
+	@media screen and(max-width: 1200px) {
+		margin-left: 0;
 	}
 	&__mobile {
 		display: none;
-		@media screen and(max-width: 760px) {
+		@media screen and(max-width: 960px) {
 			display: block;
 			order: 1;
 			content: '';
@@ -20,7 +20,7 @@
 		display: flex;
 		justify-content: space-between;
 		position: relative;
-		@media screen and(max-width: 760px) {
+		@media screen and(max-width: 960px) {
 			display: none;
 			width: 100%;
 			position: absolute;
@@ -36,7 +36,7 @@
 			left: 0;
 			@include bg($menu-mobile);
 			cursor: pointer;
-			@media screen and(max-width: 760px) {
+			@media screen and(max-width: 960px) {
 				display: none;
 			}	
 		}
@@ -45,7 +45,7 @@
 		margin-right: 25px;
 		position: relative;
 		box-sizing: border-box;
-		@media screen and(max-width: 760px) {
+		@media screen and(max-width: 960px) {
 			width: auto;
 			background-color: $white;
 			margin: 0;
@@ -53,7 +53,7 @@
 		}	
 		&:first-child {
 			margin-left: 36px;
-			@media screen and(max-width: 760px) {
+			@media screen and(max-width: 960px) {
 				margin-left: 0;
 			}
 		}
@@ -69,7 +69,7 @@
 			text-decoration: none;
 			border: 1px dashed transparent;
 			@include transition;
-			@media screen and(max-width: 760px) {
+			@media screen and(max-width: 960px) {
 				border: none;
 				border-bottom: 1px solid $light-purple;
 			}
@@ -87,7 +87,7 @@
 	}
 	&._footer {
 		.menu__list {
-			@media screen and(max-width: 760px) {
+			@media screen and(max-width: 960px) {
 				display: none;
 			}
 			&:before {
