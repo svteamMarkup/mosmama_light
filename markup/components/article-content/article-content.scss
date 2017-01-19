@@ -26,9 +26,11 @@
 		font-size: 15px;
 		color: $light-black;
 		margin-bottom: 24px;
+		line-height: 24px;
 		font-family: 'merriweather';
 		@media screen and(max-width: 960px) {
 			font-size: 14px;
+			line-height: 21px;
 		}
 	}
 	img {
