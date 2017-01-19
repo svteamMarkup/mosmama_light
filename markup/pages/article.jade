@@ -2,6 +2,7 @@ extends ./layout.jade
 block variables
 	- var page = 'article';
 block content
+	+header-article
 	.page-content
 		.page-content__inner
 			.content
@@ -27,12 +28,12 @@ block content
 		.similar-articles
 			.main-title._middle-title._text-center Похожие статьи
 			.three-columns
-				+article-block('294x192')
-				+article-block('294x192')
-				+article-block('294x192')
-				+article-block('294x192')
-				+article-block('294x192')
-				+article-block('294x192')
+				+article-block('294x192', false)
+				+article-block('294x192', false)
+				+article-block('294x192', false)
+				+article-block('294x192', false)
+				+article-block('294x192', false)
+				+article-block('294x192', false)
 		.button__wrapper
 			.button._purple._big Показать еще статьи
 

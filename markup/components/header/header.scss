@@ -24,32 +24,38 @@
 .header-search {
 	margin-left: 28px;
 	order: 3;
+	@media screen and(max-width: 960px) {
+		margin-left: 0;
+	}
 	&__mobile {
 		display: none;
 	}
 	&__wrapper {
 		.input-form {
 			border: 1px solid #e4e3e3;
+			box-shadow: 0 1px 1px rgba($black,.31) inset;
 			background-color: #f7f6f6;
 			border-radius: 16px;
 			padding-left: 14px;
 			font-style: italic;
-			font-size: 18px;
 			color: $dark-silver;
-			height: 35px;
+			height: 40px;
 			width: 395px;
 			display: none;
 			box-sizing: border-box;
 			position: absolute;
 			right: 0;
+			top: 31px;
 		}
 		&._active {
 			.input-form {
-				top: 0;
-				right: 0;
+				top: 31px;
+				right: 14px;
 				position: absolute;
+				z-index: 1000;
 				@media screen and(max-width: 960px) {
-					top: 36px;
+					top: 19px;
+					right: 0;
 				}
 				@media screen and(max-width: 516px) {
 					width: 303px;
@@ -60,24 +66,30 @@
 	}
 	&__form {
 		form {
-			position: relative;
-			right: -37px;
-			top: -17px;
 			@media screen and(max-width: 960px)  {
 				right: 0;
 			}
 		}
 	}
-	&__icon {
+	&__icon-submit {
 		background-color: #efeeee;
 		border-radius: 50%;
 		@include bg($search-icon);
 		cursor: pointer;
 		position: absolute;
-    	right: 6px;
-		top: 3px;
+    	right: 14px;
+		top: 36px;
+		z-index: 1001;
 		@media screen and(max-width: 1200px) {
+			right: 21px;
+		}
+		@media screen and(max-width: 960px) {
+			top: 24px;
 			right: 0;
-		}			
+		}
+	}
+	&__icon {
+		@extend .header-search__icon-submit;
+		z-index: 1002;
 	}
 }

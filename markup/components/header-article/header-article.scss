@@ -9,6 +9,9 @@
 		right: 0;
 		top: 0;
 		z-index: 99;
+		@media screen and(max-width: 960px) {
+			display: none;
+		}		
 	}
 	&__wrapper {
 		@extend .main;
@@ -28,7 +31,7 @@
 		margin-left: 28px;
 		width: 568px;
 	}
-	&-button__wrapper {
+	&__button-wrapper {
 		position: relative;
 		margin-left: 63px;
 		&:after {

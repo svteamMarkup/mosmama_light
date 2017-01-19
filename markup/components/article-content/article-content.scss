@@ -3,6 +3,9 @@
 		font-size: 31px;
 		font-family: 'merriweather';
 		font-weight: bold;
+		@media screen and(max-width: 960px) {
+			font-size: 20px;
+		}
 		&._purple {
 			color: $light-purple;
 		}
@@ -12,6 +15,9 @@
 		font-weight: bold;
 		text-transform: uppercase;
 		margin-bottom: 21px;
+		@media screen and(max-width: 960px) {
+			font-size: 17px;
+		}
 		&._purple {
 			color: $light-purple;
 		}
@@ -21,6 +27,15 @@
 		color: $light-black;
 		margin-bottom: 24px;
 		font-family: 'merriweather';
+		@media screen and(max-width: 960px) {
+			font-size: 14px;
+		}
+	}
+	img {
+		@media screen and(max-width: 960px) {
+			width: 100%;
+			height: auto;
+		}
 	}
 	p._blue-bg {
 		background-color: #eef3fb;
@@ -36,6 +51,11 @@
 			top: 25px;
 			left: 18px;
 			@include bg($double-arrow);
+		}
+	}
+	li {
+		@media screen and(max-width: 960px) {
+			font-size: 14px;
 		}
 	}
 	.blue-marker {

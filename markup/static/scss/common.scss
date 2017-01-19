@@ -108,7 +108,7 @@ ul li {
 	.content {
 		max-width: 635px;
 		width: 100%;
-		@media screen and(max-width: 760px) {
+		@media screen and(max-width: 960px) {
 			width: 50%;
 		}
 		@media screen and(max-width: 516px) {
@@ -140,8 +140,23 @@ ul li {
 	align-items: center;
 	border: 1px dashed #d4d4d4;
 	margin-bottom: 60px;
+	@media screen and(max-width: 516px) {
+		display: block;
+	}
 	&__title {
 		font-size: 15px;
 		font-family: 'merriweather';
 	}
+}
+.overlay {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 999;
+	height: 100%;
+	width: 100%;
+	background-color: transparent;
+	display: none;
 }
