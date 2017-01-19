@@ -1,130 +1,177 @@
-.menu {
-	margin-left: 32px;
-	@media screen and(max-width: 1200px) {
-		margin-left: 0;
-	}
-	@media screen and(max-width: 960px) {
-		order: 1;
-	}
-	&__mobile {
-		display: none;
-		@media screen and(max-width: 960px) {
-			display: block;
-			content: '';
-			position: absolute;
-			top: 33px;
-			left: 12px;
-			@include bg($menu-mobile);
-			cursor: pointer;
-		}	
-	}
-	&__list {
-		display: flex;
-		justify-content: space-between;
-		position: relative;
-		@media screen and(max-width: 960px) {
-			display: none;
-			width: 100%;
-			position: absolute;
-			top: 57px;
-			left: 0;
-			z-index: 999;
-    		width: 100%;
-		}
-		&:before {
-			content: '';
-			position: absolute;
-			top: 12px;
-			left: 0;
-			@include bg($menu-mobile);
-			cursor: pointer;
-			@media screen and(max-width: 960px) {
-				display: none;
-			}	
-		}
-	}
-	&__item {
-		margin-right: 25px;
-		position: relative;
-		box-sizing: border-box;
-		@media screen and(max-width: 960px) {
-			width: auto;
-			background-color: $white;
-			margin: 0;
-			text-align: center;
-		}	
-		&:first-child {
-			margin-left: 36px;
-			@media screen and(max-width: 960px) {
-				margin-left: 0;
-			}
-		}
-		&:last-child {
-			margin-right: 0;
-		}
-		a {
-			padding: 8px 9px;
-			font-size: 18px;
-			display: block;
-			color: $dark-silver;
-			text-transform: uppercase;
-			text-decoration: none;
-			border: 1px dashed transparent;
-			@include transition;
-			@media screen and(max-width: 960px) {
-				border: none;
-				border-bottom: 1px solid $light-purple;
-			}
-			&:hover {
-				border-color: #f3c9d9; 
-				color: $light-purple;
-			}
-		}
-		&._active {
-			a {
-				border: 1px dashed #f3c9d9;
-				color: $light-purple;
-				position: relative;
-			}
-			&:after {
-				content: '';
-				position: absolute;
-				bottom: -26px;
-				left: 0;
-				right: 0;
-				margin: auto;
-				width: 0;
-				height: 0;
-				border-left: 5px solid transparent;
-				border-right: 5px solid transparent;
-				border-bottom: 8px solid #f6f6f6;
-			}
-		}
-	}
-	&._footer {
-		margin-left: 32px;
-		.menu__list {
-			@media screen and(max-width: 960px) {
-				display: none;
-			}
-			&:before {
-				display: none;
-			}
-		}
-		.menu__item {
-			margin-left: 0;
-			a {
-				border: none;
-				padding: 0;
-				color: $dark-silver;
-				&:hover {
-					color: $light-purple;
-				}
-			}
-			&:first-child {
-				padding-left: 0;
-			}
-		}
-	}
-}
+.menu
+{
+    margin-left: 32px;
+    @media screen and(max-width: 1200px)
+    {
+        margin-left: 0;
+    }
+    @media screen and(max-width: 960px)
+    {
+        order: 1;
+    }
+    &__mobile
+    {
+        display: none;
+        @media screen and(max-width: 960px)
+        {
+            position: absolute;
+            top: 33px;
+            left: 12px;
 
+            display: block;
+
+            content: '';
+
+            @include bg($menu-mobile);
+        }
+    }
+    &__list
+    {
+        position: relative;
+
+        display: flex;
+
+        justify-content: space-between;
+        @media screen and(max-width: 960px)
+        {
+            position: absolute;
+            z-index: 999;
+            top: 57px;
+            left: 0;
+
+            display: none;
+
+            width: 100%;
+        }
+        &:before
+        {
+            position: absolute;
+            top: 12px;
+            left: 0;
+
+            content: '';
+            cursor: pointer;
+
+            @include bg($menu-mobile);
+            @media screen and(max-width: 960px)
+            {
+                display: none;
+            }
+        }
+    }
+    &__item
+    {
+        position: relative;
+
+        box-sizing: border-box;
+        margin-right: 25px;
+        @media screen and(max-width: 960px)
+        {
+            width: auto;
+            margin: 0;
+
+            text-align: center;
+
+            background-color: $white;
+        }
+        &:first-child
+        {
+            margin-left: 36px;
+            @media screen and(max-width: 960px)
+            {
+                margin-left: 0;
+            }
+        }
+        &:last-child
+        {
+            margin-right: 0;
+        }
+        a
+        {
+            font-size: 18px;
+
+            display: block;
+
+            padding: 8px 9px;
+
+            text-decoration: none;
+            text-transform: uppercase;
+
+            color: $dark-silver;
+            border: 1px dashed transparent;
+
+            @include transition;
+            @media screen and(max-width: 960px)
+            {
+                border: none;
+                border-bottom: 1px solid $light-purple;
+            }
+            &:hover
+            {
+                color: $light-purple;
+                border-color: #f3c9d9;
+            }
+        }
+        &._active
+        {
+            a
+            {
+                position: relative;
+
+                color: $light-purple;
+                border: 1px dashed #f3c9d9;
+            }
+            &:after
+            {
+                position: absolute;
+                right: 0;
+                bottom: -26px;
+                left: 0;
+
+                width: 0;
+                height: 0;
+                margin: auto;
+
+                content: '';
+
+                border-right: 5px solid transparent;
+                border-bottom: 8px solid #f6f6f6;
+                border-left: 5px solid transparent;
+            }
+        }
+    }
+    &._footer
+    {
+        margin-left: 32px;
+        .menu__list
+        {
+            @media screen and(max-width: 960px)
+            {
+                display: none;
+            }
+            &:before
+            {
+                display: none;
+            }
+        }
+        .menu__item
+        {
+            margin-left: 0;
+            a
+            {
+                padding: 0;
+
+                color: $dark-silver;
+                border: none;
+                &:hover
+                {
+                    color: $light-purple;
+                }
+            }
+            &:first-child
+            {
+                padding-left: 0;
+            }
+        }
+    }
+}

@@ -1,10 +1,11 @@
 extends ./layout.jade
 block variables
 	- var page = 'article';
+	- var page_id = 1;
 block content
 	+header-article
 	.page-content
-		.page-content__inner
+		.page-content-inner
 			.content
 				+breadcrumbs
 				+article-content

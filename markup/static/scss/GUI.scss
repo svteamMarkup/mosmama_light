@@ -1,65 +1,86 @@
 // GUI stylies of the project
 // For example, styles of the links, buttons and so on.
-.button {
-	display: inline-block;
-	cursor: pointer;
-	&._purple {
-		border: 1px solid #ecabc3;
-		text-transform: uppercase;
-		color: $black;
-		@include transition;
-		&:hover {
-			@include opacity;
-		}
-		&._purple-text {
-			color: $light-purple;
-		}
-	}
-	&._big {
-		padding: 22px 64px 17px 64px;
-		@media screen and(max-width: 516px) {
-			padding: 15px 12px;
-		}
-	}
-	&._middle {
-		padding: 13px 0 9px 0;
-		width: 167px;
-	}
-	&__wrapper {
-		text-align: center;
-		@media screen and(max-width: 516px) {
-			margin-bottom: 20px;
-		}
-	}
+.button
+{
+    display: inline-block;
+
+    cursor: pointer;
+    &._purple
+    {
+        text-transform: uppercase;
+
+        color: $black;
+        border: 1px solid #ecabc3;
+
+        @include transition;
+        &:hover
+        {
+            @include opacity;
+        }
+        &._purple-text
+        {
+            color: $light-purple;
+        }
+    }
+    &._big
+    {
+        padding: 22px 64px 17px;
+        @media screen and(max-width: 516px)
+        {
+            padding: 15px 12px;
+        }
+    }
+    &._middle
+    {
+        width: 167px;
+        padding-top: 13px;
+        padding-bottom: 9px;
+    }
+    &__wrapper
+    {
+        text-align: center;
+        @media screen and(max-width: 516px)
+        {
+            margin-bottom: 20px;
+        }
+    }
 }
-.main-title {
-	text-transform: uppercase;
-	font-weight: bold;
-	font-size: 20px;
-	margin-bottom: 28px;
-	@media screen and(max-width: 760px) {
-		margin-bottom: 16px;
-		text-align: center;
-	}
-	&._purple {
-		color: $light-purple;
-	}
+.main-title
+{
+    font-size: 20px;
+    font-weight: bold;
+
+    margin-bottom: 28px;
+
+    text-transform: uppercase;
+    @media screen and(max-width: 760px)
+    {
+        margin-bottom: 16px;
+
+        text-align: center;
+    }
+    &._purple
+    {
+        color: $light-purple;
+    }
 }
-._text-center {
-	text-align: center;
+._text-center
+{
+    text-align: center;
 }
-._middle-title {
-	font-size: 18px;
-	@media screen and(max-width: 960px) {
-		font-size: 18px;
-	}	
-	@media screen and(max-width: 516px) {
-		font-size: 15px;
-	}
+._middle-title
+{
+    font-size: 18px;
+    @media screen and(max-width: 516px)
+    {
+        font-size: 15px;
+    }
 }
-._big-title {
-	font-size: 23px;
-	@media screen and(max-width: 960px) {
-		font-size: 18px;
-	}
+._big-title
+{
+    font-size: 23px;
+    @media screen and(max-width: 960px)
+    {
+        font-size: 18px;
+    }
 }

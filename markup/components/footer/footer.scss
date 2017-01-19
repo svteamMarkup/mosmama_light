@@ -1,63 +1,92 @@
-.footer {
-	&__wrapper {
-		@extend .main;
-		display: flex;
-		justify-content: flex-start;
-		align-items: center;
-		background-color: #f6f6f6;
-		padding: 19px 20px 14px 20px;
-		@media screen and(max-width: 516px) {
-			padding: 17px 10px;
-		}
-	}
-	&__logo {
-		@include bg($header-logo);
-		@media screen and(max-width: 960px) {
-			margin: auto;
-			display: block;
-		}
-	}
-	@media screen and(max-width: 960px) {
-		&-menu__wrapper {
-			display: none;
-		}
-	}
-	&__copyrights {
-		font-size: 10px;
-		color: #383838;
-		margin-top: 7px;
-		margin-left: 32px;
-		text-transform: uppercase;
-	}
-	&-social {
-		display: flex;
-		justify-content: space-between;
-		margin-left: 324px;
-		@media screen and(max-width: 960px) {
-			display: none;
-		}
-		@media screen and(max-width: 1200px) {
-			margin-left: 269px;
-		}
-		&__item {
-			padding: 12px 28px 14px 28px;
-			border-left: 1px solid #e1e1e1;
-			@include transition;
-			&:hover {
-				@include opacity;
-			}
-			a {
-				display: block;
-			}
-			.facebook {
-				@include bg($facebook);
-			}
-			.vkontakte {
-				@include bg($vkontakte);
-			}
-			.odnoklassniki {
-				@include bg($odnoklassniki);
-			}
-		}
-	}
+.footer
+{
+    &__wrapper
+    {
+        display: flex;
+
+        padding: 19px 20px 14px;
+
+        background-color: #f6f6f6;
+
+        @extend .main;
+        justify-content: flex-start;
+        align-items: center;
+        @media screen and(max-width: 516px)
+        {
+            padding: 17px 10px;
+        }
+    }
+    &__logo
+    {
+        @include bg($header-logo);
+        @media screen and(max-width: 960px)
+        {
+            display: block;
+
+            margin: auto;
+        }
+    }
+    &__copyrights
+    {
+        font-size: 10px;
+
+        margin-top: 7px;
+        margin-left: 32px;
+
+        text-transform: uppercase;
+
+        color: #383838;
+    }
+}
+
+.footer-social
+{
+    display: flex;
+
+    margin-left: 324px;
+
+    justify-content: space-between;
+    @media screen and(max-width: 1200px)
+    {
+        margin-left: 269px;
+    }
+    @media screen and(max-width: 960px)
+    {
+        display: none;
+    }
+    &__item
+    {
+        padding: 12px 28px 14px;
+
+        border-left: 1px solid #e1e1e1;
+
+        @include transition;
+        &:hover
+        {
+            @include opacity;
+        }
+        a
+        {
+            display: block;
+        }
+        ._facebook
+        {
+            @include bg($facebook);
+        }
+        ._vkontakte
+        {
+            @include bg($vkontakte);
+        }
+        ._odnoklassniki
+        {
+            @include bg($odnoklassniki);
+        }
+    }
+}
+.footer-menu__wrapper
+{
+    @media screen and(max-width: 960px)
+    {
+        display: none;
+    }
 }

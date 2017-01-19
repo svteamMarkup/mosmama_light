@@ -1,6 +1,7 @@
 extends ./layout.jade
 block variables
 	- var page = 'catalog2';
+	- var page_id = 3;
 block content
 	.page-content
 		.main-title._middle-title Течение беременности
@@ -11,7 +12,7 @@ block content
 				+article-block-second('175x115')
 				+article-block-second('175x115')
 				+article-block-second('175x115')._last
-		.page-content__inner
+		.page-content-inner
 			.content
 				.one-column
 					+article-block-second('235x154')._full-width

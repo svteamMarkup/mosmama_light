@@ -1,7 +1,9 @@
 // Mixins.
-@mixin transition {
+@mixin transition
+{
     transition: all .33s ease-in-out;
 }
-@mixin opacity {
+@mixin opacity
+{
     opacity: .8;
 }

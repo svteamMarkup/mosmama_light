@@ -1,58 +1,81 @@
-.header-article {
-	display: none;
-	&._fixed {
-		position: fixed;
-		display: block;
-		background-color: $white;
-		border-bottom: 1px solid #eee;
-		left: 0;
-		right: 0;
-		top: 0;
-		z-index: 9999;
-		@media screen and(max-width: 960px) {
-			display: none;
-		}		
-	}
-	&__wrapper {
-		@extend .main;
-		display: flex;
-		justify-content: flex-start;
-		align-items: center;
-		padding: 19px 20px 14px 20px;
-	}
-	&__logo {
-		@include bg($header-logo);
-	}	
-	&__title {
-		margin-bottom: 0;
-		font-family: 'merriweather';
-		font-weight: bold;
-		text-transform: none;
-		margin-left: 28px;
-		width: 568px;
-	}
-	&__button-wrapper {
-		position: relative;
-		margin-left: 63px;
-		&:after {
-		    content: '';
-		    border: 2px solid #ecabc3;
-		    display: block;
-		    right: -14px;
-		    top: 50%;
-		    margin: -14px 0 0 -19px;
-		    border-right: none;
-		    border-top: none;
-		    border-width: 1px;
-		    width: 28px;
-		    height: 28px;
-		    transform: rotate(223deg);
-		    position: absolute;
-	    }
-	}
-	&__button {
-		font-size: 14px;
-		text-decoration: none;
-		border-right-width: 0!important;
-	}
+.header-article
+{
+    display: none;
+    &__wrapper
+    {
+        display: flex;
+
+        padding: 19px 20px 14px;
+
+        @extend .main;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    &__logo
+    {
+        @include bg($header-logo);
+    }
+    &__title
+    {
+        font-family: 'merriweather';
+        font-weight: bold;
+
+        width: 568px;
+        margin-bottom: 0;
+        margin-left: 28px;
+
+        text-transform: none;
+    }
+    &__button-wrapper
+    {
+        position: relative;
+
+        margin-left: 63px;
+        &:after
+        {
+            position: absolute;
+            top: 50%;
+            right: -14px;
+
+            display: block;
+
+            width: 28px;
+            height: 28px;
+            margin-top: -14px;
+            margin-left: -19px;
+
+            content: '';
+            transform: rotate(223deg);
+
+            border: 2px solid #ecabc3;
+            border-width: 1px;
+            border-top: none;
+            border-right: none;
+        }
+    }
+    &__button
+    {
+        font-size: 14px;
+
+        text-decoration: none;
+
+        border-right-width: 0!important;
+    }
+    &._fixed
+    {
+        position: fixed;
+        z-index: 9999;
+        top: 0;
+        right: 0;
+        left: 0;
+
+        display: block;
+
+        border-bottom: 1px solid #eee;
+        background-color: $white;
+        @media screen and(max-width: 960px)
+        {
+            display: none;
+        }
+    }
 }

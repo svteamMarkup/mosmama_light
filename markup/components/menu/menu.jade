@@ -3,8 +3,11 @@ mixin menu(items)
 	.menu(class="#{modiffer}")
 		.menu__mobile
 		.menu__list
-			each item in items
-				.menu__item
-					a(href="#" title="")= item
-				
+			each item, i in items
+				- if(i == page_id)
+					.menu__item._active
+						a(href="#" title="")= item
+				- else		
+					.menu__item
+						a(href="#" title="")= item				
 
