@@ -1,220 +1,181 @@
 // Common styles of the project
 html,
-body
-{
-    height: 100%;
+body {
+	height: 100%;
 }
-body
-{
-    font-family: 'roboto_condensed';
-    font-size: $default-font-size;
+body {
+	color: $black;
+	background-color: #fbf6f6;
 
-    color: $black;
-    background-color: #fbf6f6;
+	font-family: "roboto_condensed";
+	font-size: $default-font-size;
 }
 input,
-textarea
-{
-    border: none;
-    outline: none;
+textarea {
+	border: none;
+	outline: none;
 }
-ul li
-{
-    list-style: none;
+ul li {
+	list-style: none;
 }
-.main
-{
-    box-sizing: border-box;
-    width: 100%;
-    max-width: 1000px;
-    margin: auto;
-    padding: 0 20px;
+.main {
+	box-sizing: border-box;
+	width: 100%;
+	max-width: 1000px;
+	margin: auto;
+	padding: 0 20px;
 
-    background-color: $white;
-    @media screen and(max-width: 760px)
-    {
-        padding: 0 10px;
-    }
+	background-color: $white;
+	@media screen and(max-width: 760px) {
+		padding: 0 10px;
+	}
 }
-.page-content
-{
-    padding-top: 29px;
-    padding-bottom: 50px;
-    @media screen and(max-width: 516px)
-    {
-        padding-top: 20px;
-        padding-bottom: 25px;
-    }
+.page-content {
+	padding-top: 29px;
+	padding-bottom: 50px;
+	@media screen and(max-width: 516px) {
+		padding-top: 20px;
+		padding-bottom: 25px;
+	}
 }
 
-.two-columns
-{
-    display: flex;
+.two-columns {
+	display: flex;
 
-    margin-bottom: 47px;
+	margin-bottom: 47px;
 
-    justify-content: space-between;
-    @media screen and(max-width: 516px)
-    {
-        display: block;
+	justify-content: space-between;
+	@media screen and(max-width: 516px) {
+		display: block;
 
-        margin-bottom: 18px;
-    }
-    &._first
-    {
-        justify-content: flex-start;
-        @media screen and(max-width: 960px)
-        {
-            display: flex;
+		margin-bottom: 18px;
+	}
+	&._first {
+		justify-content: flex-start;
+		@media screen and(max-width: 960px) {
+			display: flex;
 
-            margin-bottom: 15px;
-        }
-        @media screen and(max-width: 516px)
-        {
-            display: block;
-        }
-    }
-    &__left
-    {
-        @media screen and(max-width: 760px)
-        {
-            width: 50%;
-            margin-bottom: 10px;
-        }
-        @media screen and(max-width: 516px)
-        {
-            width: auto;
-        }
-    }
-    &__right
-    {
-        margin-left: 29px;
-        @media screen and(max-width: 760px)
-        {
-            width: 50%;
-            margin-left: 10px;
-        }
-        @media screen and(max-width: 516px)
-        {
-            width: auto;
-            margin-left: 0;
-        }
-    }
+			margin-bottom: 15px;
+		}
+		@media screen and(max-width: 516px) {
+			display: block;
+		}
+	}
+	&__left {
+		@media screen and(max-width: 760px) {
+			width: 50%;
+			margin-bottom: 10px;
+		}
+		@media screen and(max-width: 516px) {
+			width: auto;
+		}
+	}
+	&__right {
+		margin-left: 29px;
+		@media screen and(max-width: 760px) {
+			width: 50%;
+			margin-left: 10px;
+		}
+		@media screen and(max-width: 516px) {
+			width: auto;
+			margin-left: 0;
+		}
+	}
 }
-.three-columns
-{
-    display: flex;
+.three-columns {
+	display: flex;
 
-    flex-wrap: wrap;
-    justify-content: space-between;
-    @media screen and(max-width: 760px)
-    {
-        display: flex;
-    }
-    @media screen and(max-width: 516px)
-    {
-        margin-bottom: 18px;
-    }
+	flex-wrap: wrap;
+	justify-content: space-between;
+	@media screen and(max-width: 760px) {
+		display: flex;
+	}
+	@media screen and(max-width: 516px) {
+		margin-bottom: 18px;
+	}
 }
-.one-column
-{
-    margin-bottom: 98px;
-    @media screen and(max-width: 760px)
-    {
-        margin-bottom: 20px;
-    }
-    &._silver
-    {
-        margin-bottom: 63px;
-        padding: 11px 8px 19px 11px;
+.one-column {
+	margin-bottom: 98px;
+	@media screen and(max-width: 760px) {
+		margin-bottom: 20px;
+	}
+	&._silver {
+		margin-bottom: 63px;
+		padding: 11px 8px 19px 11px;
 
-        background-color: #f6f6f6;
-        @media screen and(max-width: 760px)
-        {
-            margin-bottom: 20px;
-        }
-    }
+		background-color: #f6f6f6;
+		@media screen and(max-width: 760px) {
+			margin-bottom: 20px;
+		}
+	}
 }
-.page-content-inner
-{
-    display: flex;
+.page-content-inner {
+	display: flex;
 
-    justify-content: space-between;
-    @media screen and(max-width: 516px)
-    {
-        display: block;
-    }
-    .content
-    {
-        width: 100%;
-        max-width: 635px;
-        @media screen and(max-width: 960px)
-        {
-            width: 50%;
-        }
-        @media screen and(max-width: 516px)
-        {
-            width: auto;
-        }
-    }
-    .right-sidebar
-    {
-        width: 100%;
-        max-width: 300px;
-        @media screen and(max-width: 760px)
-        {
-            width: 50%;
-        }
-        @media screen and(max-width: 516px)
-        {
-            width: 250px;
-            margin: auto;
-        }
-    }
-    .disqus-title
-    {
-        font-size: 20px;
-        font-weight: bold;
+	justify-content: space-between;
+	@media screen and(max-width: 516px) {
+		display: block;
+	}
+	.content {
+		width: 100%;
+		max-width: 635px;
+		@media screen and(max-width: 960px) {
+			width: 50%;
+		}
+		@media screen and(max-width: 516px) {
+			width: auto;
+		}
+	}
+	.right-sidebar {
+		width: 100%;
+		max-width: 300px;
+		@media screen and(max-width: 760px) {
+			width: 50%;
+		}
+		@media screen and(max-width: 516px) {
+			width: 250px;
+			margin: auto;
+		}
+	}
+	.disqus-title {
+		text-transform: uppercase;
 
-        text-transform: uppercase;
+		color: $light-purple;
 
-        color: $light-purple;
-    }
+		font-size: 20px;
+		font-weight: bold;
+	}
 }
-.share-advice
-{
-    display: flex;
+.share-advice {
+	display: flex;
 
-    margin-bottom: 60px;
-    padding: 23px 40px 23px 17px;
+	margin-bottom: 60px;
+	padding: 23px 40px 23px 17px;
 
-    border: 1px dashed #d4d4d4;
+	border: 1px dashed #d4d4d4;
 
-    justify-content: space-between;
-    align-items: center;
-    @media screen and(max-width: 516px)
-    {
-        display: block;
-    }
-    &__title
-    {
-        font-family: 'merriweather';
-        font-size: 15px;
-    }
+	align-items: center;
+	justify-content: space-between;
+	@media screen and(max-width: 516px) {
+		display: block;
+	}
+	&__title {
+		font-family: "merriweather";
+		font-size: 15px;
+	}
 }
-.overlay
-{
-    position: fixed;
-    z-index: 999;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+.overlay {
+	position: fixed;
+	z-index: 999;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
 
-    display: none;
+	display: none;
 
-    width: 100%;
-    height: 100%;
+	width: 100%;
+	height: 100%;
 
-    background-color: transparent;
+	background-color: transparent;
 }
