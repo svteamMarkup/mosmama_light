@@ -4,6 +4,9 @@
 
     border: 1px solid #e1e7eb;
     border-radius: 3px;
+    @media screen and(max-width: 960px) {
+    	margin-bottom: 20px;
+    }
     img
     {
         width: 100%;

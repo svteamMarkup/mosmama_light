@@ -1,40 +1,32 @@
-.list-sub-categories
-{
-    @media screen and(max-width: 960px)
-    {
+.list-sub-categories {
+    @media screen and(max-width: 960px) {
         border-bottom: 1px solid $light-silver;
     }
-    &__wrapper
-    {
+    &__wrapper {
         background-color: #f6f6f6;
 
         @extend .main;
-        @media screen and(max-width: 960px)
-        {
+        @media screen and(max-width: 960px) {
             position: relative;
         }
     }
-    &__mobile
-    {
+    &__mobile {
         display: none;
-        @media screen and(max-width: 960px)
-        {
-            font-family: 'merriweather';
-            font-style: italic;
-
+        @media screen and(max-width: 960px) {
             display: block;
 
             padding: 8px 0;
+
+            font-family: "merriweather";
+            font-style: italic;
         }
     }
-    &__list
-    {
+    &__list {
         display: flex;
 
         align-items: center;
         justify-content: center;
-        @media screen and(max-width: 960px)
-        {
+        @media screen and(max-width: 960px) {
             position: absolute;
             z-index: 99;
             top: 39px;
@@ -47,12 +39,10 @@
             background-color: #f6f6f6;
         }
     }
-    &__item
-    {
+    &__item {
         margin-right: 41px;
         padding: 14px 0;
-        @media screen and(max-width: 960px)
-        {
+        @media screen and(max-width: 960px) {
             margin-right: 0;
             padding-top: 0;
             padding-bottom: 0;
@@ -61,14 +51,16 @@
 
             border-bottom: 1px solid $light-silver;
         }
-        &:last-child
-        {
+        &:last-child {
             margin-right: 0;
         }
-        a
-        {
-            font-size: 14px;
-
+        &._active {
+            a {
+                color: $light-purple;
+                border-color: #f3c9d9;
+            }
+        }
+        a {
             padding-bottom: 3px;
 
             text-decoration: none;
@@ -76,19 +68,18 @@
             color: #686868;
             border-bottom: 1px solid transparent;
 
+            font-size: 14px;
+
             @include transition;
-            @media screen and(max-width: 960px)
-            {
+            @media screen and(max-width: 960px) {
                 display: block;
 
                 padding: 14px 0;
             }
-            &:hover
-            {
+            &:hover {
                 color: $light-purple;
                 border-color: #f3c9d9;
-                @media screen and(max-width: 960px)
-                {
+                @media screen and(max-width: 960px) {
                     border-color: transparent;
                 }
             }

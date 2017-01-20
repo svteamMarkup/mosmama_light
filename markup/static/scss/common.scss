@@ -136,6 +136,12 @@ ul li {
 			width: 250px;
 			margin: auto;
 		}
+		&__title {
+			margin-bottom: 14px;
+		}
+		&._article-page {
+			margin-top: 47px;
+		}		
 	}
 	.disqus-title {
 		text-transform: uppercase;
