@@ -25,6 +25,9 @@
     }
     &__photo
     {
+        @media screen and(max-width: 960px) {
+            margin-bottom: 5px;
+        }
         img
         {
             @media screen and(max-width: 960px)

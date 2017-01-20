@@ -143,14 +143,6 @@ ul li {
 			margin-top: 47px;
 		}		
 	}
-	.disqus-title {
-		text-transform: uppercase;
-
-		color: $light-purple;
-
-		font-size: 20px;
-		font-weight: bold;
-	}
 }
 .share-advice {
 	display: flex;
@@ -168,6 +160,9 @@ ul li {
 	&__title {
 		font-family: "merriweather";
 		font-size: 15px;
+		@media screen and(max-width: 516px) {
+			text-align: center;
+		}
 	}
 }
 .overlay {
