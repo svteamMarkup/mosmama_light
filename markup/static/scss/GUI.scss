@@ -25,7 +25,7 @@
     &._big
     {
         padding: 22px 64px 17px;
-        @media screen and(max-width: 516px)
+        @media screen and(max-width: 480px)
         {
             padding: 15px 12px;
         }
@@ -36,20 +36,31 @@
         padding-top: 13px;
         padding-bottom: 9px;
     }
-    &__wrapper
-    {
-        text-align: center;
-        @media screen and(max-width: 516px)
-        {
-            margin-bottom: 20px;
+    &._triangle {
+        border-right-width: 0;
+        @media screen and(max-width: 960px) {
+            margin: auto;
+            display: block;
+            border-right-width: 1px;
         }
+        @media screen and(max-width: 760px) {
+            border-right-width: 0;
+        }        
+    }
+}
+.page-content-show-more
+{
+    text-align: center;
+    @media screen and(max-width: 480px)
+    {
+        margin-bottom: 20px;
     }
 }
 .main-title
 {
     font-size: 20px;
     font-weight: bold;
-
+    margin-top: 0;
     margin-bottom: 28px;
 
     text-transform: uppercase;
@@ -72,7 +83,7 @@
 {
     font-size: 18px;
     color: $light-black;
-    @media screen and(max-width: 516px)
+    @media screen and(max-width: 480px)
     {
         font-size: 15px;
     }

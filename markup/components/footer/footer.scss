@@ -9,19 +9,23 @@
         align-items: center;
         @extend .main;
         justify-content: flex-start;
-        @media screen and(max-width: 516px) {
-            padding: 17px 10px;
+        @media screen and(max-width: 960px) {
+            padding: 8px 10px;
+            display: block;
         }
     }
     &__logo {
-        text-indent: -9999px;
-
-        @include bg($header-logo);
+        @extend .header__logo;
         @media screen and(max-width: 960px) {
             display: block;
 
             margin: auto;
         }
+    }
+}
+.footer-group {
+    @media screen and(max-width: 960px) {
+        display: none;
     }
     &__copyrights {
         margin-top: 7px;
@@ -32,9 +36,8 @@
         color: #383838;
 
         font-size: 10px;
-    }
+    }    
 }
-
 .footer-social {
     display: flex;
 
@@ -46,33 +49,27 @@
         margin-left: 269px;
     }
     @media screen and(max-width: 960px) {
-        display: none;
+        margin-left: 0;
+        justify-content: center;
     }
     &__item {
-        padding: 12px 28px 14px;
-
+        margin: 12px 28px 14px;
+        display: block;
         border-left: 1px solid #e1e1e1;
 
         @include transition;
         &:hover {
             @include opacity;
         }
-        a {
-            display: block;
-        }
-        ._facebook {
+        &._v1 {
             @include bg($facebook);
         }
-        ._vkontakte {
+        &._v2 {
             @include bg($vkontakte);
         }
-        ._odnoklassniki {
+        &._v3 {
             @include bg($odnoklassniki);
         }
     }
 }
-.footer-menu__wrapper {
-    @media screen and(max-width: 960px) {
-        display: none;
-    }
-}
+

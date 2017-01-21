@@ -15,7 +15,7 @@ textarea {
 	border: none;
 	outline: none;
 }
-ul li {
+ul li, ol li {
 	list-style: none;
 }
 .main {
@@ -26,14 +26,14 @@ ul li {
 	padding: 0 20px;
 
 	background-color: $white;
-	@media screen and(max-width: 760px) {
+	@media screen and(max-width: 960px) {
 		padding: 0 10px;
 	}
 }
 .page-content {
 	padding-top: 29px;
 	padding-bottom: 50px;
-	@media screen and(max-width: 516px) {
+	@media screen and(max-width: 480px) {
 		padding-top: 20px;
 		padding-bottom: 25px;
 	}
@@ -45,7 +45,10 @@ ul li {
 	margin-bottom: 47px;
 
 	justify-content: space-between;
-	@media screen and(max-width: 516px) {
+	@media screen and(max-width: 960px) {
+		margin-bottom: 15px;
+	}	
+	@media screen and(max-width: 480px) {
 		display: block;
 
 		margin-bottom: 18px;
@@ -57,7 +60,7 @@ ul li {
 
 			margin-bottom: 15px;
 		}
-		@media screen and(max-width: 516px) {
+		@media screen and(max-width: 480px) {
 			display: block;
 		}
 	}
@@ -66,7 +69,7 @@ ul li {
 			width: 50%;
 			margin-bottom: 10px;
 		}
-		@media screen and(max-width: 516px) {
+		@media screen and(max-width: 480px) {
 			width: auto;
 		}
 	}
@@ -76,7 +79,7 @@ ul li {
 			width: 50%;
 			margin-left: 10px;
 		}
-		@media screen and(max-width: 516px) {
+		@media screen and(max-width: 480px) {
 			width: auto;
 			margin-left: 0;
 		}
@@ -87,10 +90,10 @@ ul li {
 
 	flex-wrap: wrap;
 	justify-content: space-between;
-	@media screen and(max-width: 760px) {
-		display: flex;
-	}
-	@media screen and(max-width: 516px) {
+	@media screen and(max-width: 960px) {
+		margin-bottom: 15px;
+	}	
+	@media screen and(max-width: 480px) {
 		margin-bottom: 18px;
 	}
 }
@@ -113,7 +116,7 @@ ul li {
 	display: flex;
 
 	justify-content: space-between;
-	@media screen and(max-width: 516px) {
+	@media screen and(max-width: 480px) {
 		display: block;
 	}
 	.content {
@@ -122,19 +125,25 @@ ul li {
 		@media screen and(max-width: 960px) {
 			width: 50%;
 		}
-		@media screen and(max-width: 516px) {
+		@media screen and(max-width: 480px) {
 			width: auto;
+		}
+		&._article-page {
+			@media screen and(max-width: 960px) {
+				width: 100%;
+			}
+		}
+		&._catalog2-page {
+			@media screen and(max-width: 960px) {
+				width: 100%;
+			}
 		}
 	}
 	.right-sidebar {
 		width: 100%;
 		max-width: 300px;
-		@media screen and(max-width: 760px) {
-			width: 50%;
-		}
-		@media screen and(max-width: 516px) {
-			width: 250px;
-			margin: auto;
+		@media screen and(max-width: 960px) {
+			display: none;
 		}
 		&__title {
 			margin-bottom: 14px;
@@ -154,13 +163,13 @@ ul li {
 
 	align-items: center;
 	justify-content: space-between;
-	@media screen and(max-width: 516px) {
+	@media screen and(max-width: 480px) {
 		display: block;
 	}
 	&__title {
 		font-family: "merriweather";
 		font-size: 15px;
-		@media screen and(max-width: 516px) {
+		@media screen and(max-width: 480px) {
 			text-align: center;
 		}
 	}

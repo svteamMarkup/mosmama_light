@@ -9,8 +9,8 @@
         width: 30%;
         margin-bottom: 10px;
     }
-    @media screen and(max-width: 516px) {
-        width: 250px;
+    @media screen and(max-width: 480px) {
+        width: 100%;
         margin: 0 auto 10px;
     }
     &__category {
@@ -26,14 +26,17 @@
         border: 1px solid #9d9d9d;
         background-color: $white;
         @media screen and(max-width: 760px) {
-            font-size: 13px;
+            font-size: 10px;
         }
+        @media screen and(max-width: 480px) {
+            font-size: 17px;
+        }        
     }
     &__photo {
         position: relative;
 
         margin-bottom: 8px;
-        @media screen and(max-width: 516px) {
+        @media screen and(max-width: 480px) {
             margin-bottom: 3px;
         }
         img {
@@ -55,7 +58,7 @@
         font-family: "merriweather";
 
         @include transition;
-        @media screen and(max-width: 516px) {
+        @media screen and(max-width: 480px) {
             margin-bottom: 5px;
         }
         &:hover {
@@ -67,6 +70,12 @@
 
         font-size: 15px;
         font-style: italic;
+        @media screen and(max-width: 960px) {
+            font-size: 19px;
+        }        
+        @media screen and(max-width: 760px) {
+            font-size: 17px;
+        }
     }
     &._large {
         box-sizing: border-box;
@@ -78,8 +87,8 @@
             width: auto;
             height: 100%;
         }
-        @media screen and(max-width: 516px) {
-            width: 250px;
+        @media screen and(max-width: 480px) {
+            width: 100%;
             height: auto;
         }
         &._purple {
