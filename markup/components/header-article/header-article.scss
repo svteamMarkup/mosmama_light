@@ -53,6 +53,8 @@
         font-size: 14px;
         @extend ._middle;
         @extend ._text-center;
+        @extend ._purple;
+        @extend ._triangle;
         &:after {
             position: absolute;
             top: 50%;

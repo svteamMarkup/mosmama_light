@@ -56,7 +56,7 @@
         color: $light-black;
 
         font-family: "merriweather";
-
+        @extend ._big-title;
         @include transition;
         @media screen and(max-width: 480px) {
             margin-bottom: 5px;
