@@ -1,11 +1,10 @@
 mixin article-block(imagesize, category)
 	- var modiffer = attributes.class || ''
 	.article-block(class="#{modiffer}")
-		.article-block__inner
-			.article-block__photo
-				- if (category == true)
-					.article-block__category Беременность и роды
-				img(src="http://placehold.it/#{imagesize}" alt="")
-			a(href="#" title="").article-block__title._big-title Переходный возраст подростка
-			.article-block__description.
-				Быть мамой – это счастье и одновременно огромная ответственность. А если мама но...
+		.article-block__photo
+			- if (category == true)
+				.article-block__category Беременность и роды
+			img(src="http://placehold.it/#{imagesize}" alt="")
+		a(href="#" title="").article-block__title._big-title Переходный возраст подростка
+		.article-block__description.
+			Быть мамой – это счастье и одновременно огромная ответственность. А если мама но...
