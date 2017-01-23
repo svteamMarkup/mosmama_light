@@ -212,4 +212,7 @@ ul li, ol li {
 	height: 100%;
 
 	background-color: transparent;
+	&._menu {
+		z-index: 0;
+	}
 }
