@@ -80,9 +80,8 @@
     &._large {
         box-sizing: border-box;
         width: 462px;
-        height: 435px;
         margin-bottom: 0;
-        padding: 13px 16px 0 13px;
+        padding: 13px 16px 52px 13px;
         @media screen and(max-width: 960px) {
             width: auto;
             height: 100%;
