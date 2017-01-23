@@ -1,29 +1,22 @@
-.breadcrumbs
-{
+.breadcrumbs {
     margin-bottom: 23px;
-    @media screen and(max-width: 960px)
-    {
+    @media screen and(max-width: 960px) {
         display: table;
 
         margin: auto;
         padding-top: 15px;
     }
-    &__wrapper
-    {
+    &__wrapper {
         display: flex;
 
         justify-content: flex-start;
     }
-    &__title
-    {
-        font-size: 38px;
-
+    &__title {
         margin-top: 10px;
-    }
-    &__item
-    {
-        font-size: 12px;
 
+        font-size: 38px;
+    }
+    &__item {
         position: relative;
 
         margin-right: 26px;
@@ -34,27 +27,25 @@
 
         color: $light-silver;
 
+        font-size: 12px;
+
         @include transition;
-        @media screen and(max-width: 760px)
-        {
+        @media screen and(max-width: 760px) {
             margin-right: 3px;
         }
-        @media screen and(max-width: 480px)
-        {
+        @media screen and(max-width: 480px) {
             margin-right: 8px;
         }
-        &:before
-        {
+        &:before {
             position: absolute;
             top: 4px;
             left: 0;
 
-            content: '';
+            content: "";
 
             @include bg($small-arrow);
         }
-        &:hover
-        {
+        &:hover {
             text-decoration: underline;
         }
     }

@@ -1,7 +1,5 @@
-.header
-{
-    &__wrapper
-    {
+.header {
+    &__wrapper {
         position: relative;
 
         display: flex;
@@ -11,46 +9,36 @@
         border-bottom: 1px solid #eee;
         background-color: $white;
 
+        align-items: center;
         @extend .main;
         justify-content: flex-start;
-        align-items: center;
-        @media screen and(max-width: 960px)
-        {
+        @media screen and(max-width: 960px) {
             padding: 8px 10px;
         }
     }
-    &__logo
-    {
+    &__logo {
         text-indent: -9999px;
 
         @include bg($header-logo);
-        @media screen and(max-width: 960px)
-        {
+        @media screen and(max-width: 960px) {
             margin: auto;
 
             order: 2;
         }
     }
 }
-.header-search
-{
+.header-search {
     margin-left: 28px;
 
     order: 3;
-    @media screen and(max-width: 960px)
-    {
+    @media screen and(max-width: 960px) {
         margin-left: 0;
     }
-    &__mobile
-    {
+    &__mobile {
         display: none;
     }
-    &__wrapper
-    {
-        .input-form
-        {
-            font-style: italic;
-
+    &__wrapper {
+        .input-form {
             position: absolute;
             top: 31px;
             right: 0;
@@ -67,6 +55,8 @@
             border-radius: 16px;
             background-color: #f7f6f6;
             box-shadow: 0 1px 1px rgba($black,.31) inset;
+
+            font-style: italic;
             @media screen and(max-width: 960px) {
                 top: 19px;
             }
@@ -74,42 +64,33 @@
                 width: 303px;
             }
         }
-        &._active
-        {
-            .input-form
-            {
+        &._active {
+            .input-form {
                 z-index: 1000;
                 right: 14px;
-                @media screen and(max-width: 960px)
-                {
+                @media screen and(max-width: 960px) {
                     top: 19px;
                     right: 0;
                 }
-                @media screen and(max-width: 480px)
-                {
+                @media screen and(max-width: 480px) {
                     width: 303px;
                 }
             }
         }
     }
-    &__form
-    {
-        form
-        {
-            @media screen and(max-width: 960px)
-            {
+    &__form {
+        form {
+            @media screen and(max-width: 960px) {
                 right: 0;
             }
         }
     }
-    &__icon
-    {
+    &__icon {
         z-index: 1002;
 
         @extend .header-search__icon-submit;
     }
-    &__icon-submit
-    {
+    &__icon-submit {
         position: absolute;
         z-index: 1001;
         top: 36px;
@@ -121,12 +102,10 @@
         background-color: #efeeee;
 
         @include bg($search-icon);
-        @media screen and(max-width: 1200px)
-        {
+        @media screen and(max-width: 1200px) {
             right: 21px;
         }
-        @media screen and(max-width: 960px)
-        {
+        @media screen and(max-width: 960px) {
             top: 24px;
             right: 11px;
         }

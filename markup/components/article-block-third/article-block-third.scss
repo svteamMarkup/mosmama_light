@@ -1,41 +1,34 @@
-.article-block-third
-{
+.article-block-third {
     display: flex;
 
     margin-bottom: 22px;
 
-    justify-content: flex-start;
     align-items: center;
-    &:last-child
-    {
+    justify-content: flex-start;
+    &:last-child {
         margin-bottom: 0;
     }
-    &__photo
-    {
-        img
-        {
-            @media screen and(max-width: 960px)
-            {
+    &__photo {
+        img {
+            @media screen and(max-width: 960px) {
                 width: 100%;
                 height: auto;
             }
         }
     }
-    &__title
-    {
-        font-family: 'merriweather';
-        font-size: 12px;
-        line-height: 19px;
-
+    &__title {
         margin-left: 15px;
 
         text-decoration: none;
 
         color: $light-black;
 
+        font-family: "merriweather";
+        font-size: 12px;
+        line-height: 19px;
+
         @include transition;
-        &:hover
-        {
+        &:hover {
             color: $dark-purple;
         }
     }

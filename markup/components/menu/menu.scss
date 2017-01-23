@@ -36,8 +36,10 @@
 			left: 0;
 
 			display: none;
-			border-top: 1px solid $light-purple;
+
 			width: 100%;
+
+			border-top: 1px solid $light-purple;
 		}
 		&:before {
 			position: absolute;

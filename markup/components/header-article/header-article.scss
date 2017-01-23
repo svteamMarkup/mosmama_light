@@ -1,8 +1,9 @@
 .header-article {
-   display: none;
-   border-bottom: 1px solid #eee;
-   background-color: $white;
-   &__wrapper {
+    display: none;
+
+    border-bottom: 1px solid #eee;
+    background-color: $white;
+    &__wrapper {
         display: flex;
 
         padding: 19px 20px 14px;
@@ -12,6 +13,7 @@
         justify-content: flex-start;
         @media screen and(max-width: 960px) {
             padding: 8px 10px;
+
             box-shadow: 0 0 10px rgba($black,.65);
         }
         @media screen and(max-width: 760px) {
@@ -33,8 +35,9 @@
 
         font-family: "merriweather";
         font-weight: bold;
-        @extend .main-title;
+
         @extend ._middle-title;
+        @extend .main-title;
         @media screen and(max-width: 960px) {
             width: auto;
             margin-left: 0;
@@ -42,19 +45,21 @@
         @media screen and(max-width: 760px) {
             width: auto;
             margin-bottom: 10px;
-        }        
+        }
     }
     &__button {
         position: relative;
 
         margin-left: 63px;
+
         text-decoration: none;
 
         font-size: 14px;
-        @extend ._middle;
-        @extend ._text-center;
-        @extend ._purple;
+
         @extend ._triangle;
+        @extend ._purple;
+        @extend ._text-center;
+        @extend ._middle;
         &:after {
             position: absolute;
             top: 50%;
@@ -83,11 +88,12 @@
         }
     }
     &._fixed {
-        display: block;
         position: fixed;
         z-index: 9999;
         top: 0;
         right: 0;
         left: 0;
+
+        display: block;
     }
 }

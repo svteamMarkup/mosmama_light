@@ -1,69 +1,54 @@
-.article-block-second
-{
+.article-block-second {
     display: flex;
 
     width: 447px;
     margin-bottom: 41px;
 
     justify-content: space-between;
-    @media screen and(max-width: 960px)
-    {
+    @media screen and(max-width: 960px) {
         width: auto;
         margin-bottom: 20px;
     }
-    @media screen and(max-width: 480px)
-    {
+    @media screen and(max-width: 480px) {
         display: block;
 
         width: 100%;
         margin: auto;
         margin-bottom: 10px;
     }
-    &._last
-    {
+    &._last {
         margin-bottom: 0;
     }
-    &__photo
-    {
+    &__photo {
         @media screen and(max-width: 960px) {
             margin-bottom: 5px;
         }
-        img
-        {
-            @media screen and(max-width: 960px)
-            {
+        img {
+            @media screen and(max-width: 960px) {
                 width: 100%;
                 height: auto;
             }
         }
     }
-    &__content
-    {
+    &__content {
         margin-left: 18px;
-        @media screen and(max-width: 480px)
-        {
+        @media screen and(max-width: 480px) {
             margin-left: 0;
         }
     }
-    &__category
-    {
-        font-size: 12px;
-
+    &__category {
         margin-bottom: 10px;
 
         text-transform: uppercase;
 
         color: $light-silver;
-        @media screen and(max-width: 480px)
-        {
+
+        font-size: 12px;
+        @media screen and(max-width: 480px) {
             margin-bottom: 5px;
         }
     }
-    &__title
-    {
-        font-family: 'merriweather';
-        font-size: 17px;
-
+    &__title {
         display: block;
 
         margin-bottom: 10px;
@@ -72,31 +57,30 @@
 
         color: $light-black;
 
+        font-family: "merriweather";
+        font-size: 17px;
+
         @include transition;
-        &:hover
-        {
+        &:hover {
             color: $dark-purple;
         }
-        @media screen and(max-width: 480px)
-        {
+        @media screen and(max-width: 480px) {
             margin-bottom: 5px;
         }
     }
-    &__description
-    {
+    &__description {
+        color: $light-silver;
+
         font-size: 15px;
         font-style: italic;
-
-        color: $light-silver;
         @media screen and(max-width: 960px) {
             font-size: 19px;
-        }        
+        }
         @media screen and(max-width: 760px) {
             font-size: 17px;
-        }        
+        }
     }
-    &._full-width
-    {
+    &._full-width {
         width: 100%;
     }
 }

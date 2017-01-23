@@ -1,79 +1,63 @@
-.article-content
-{
+.article-content {
     @media screen and(max-width: 960px) {
         width: 100%;
     }
-    h1
-    {
-        font-family: 'merriweather';
+    h1 {
+        color: $light-purple;
+
+        font-family: "merriweather";
         font-size: 31px;
         font-weight: bold;
         line-height: 47px;
-
-        color: $light-purple;
-        @media screen and(max-width: 960px)
-        {
+        @media screen and(max-width: 960px) {
             font-size: 24px;
             line-height: 36px;
         }
-        @media screen and(max-width: 760px)
-        {
+        @media screen and(max-width: 760px) {
             font-size: 22px;
             line-height: 34px;
         }
     }
-    h2
-    {
-        font-size: 20px;
-        font-weight: 400;
-
+    h2 {
         margin-bottom: 21px;
 
         color: $light-purple;
-        @media screen and(max-width: 960px)
-        {
+
+        font-size: 20px;
+        font-weight: 400;
+        @media screen and(max-width: 960px) {
             font-size: 22px;
             line-height: 38px;
         }
-        @media screen and(max-width: 760px)
-        {
+        @media screen and(max-width: 760px) {
             font-size: 20px;
             line-height: 36px;
         }
     }
-    p
-    {
-        font-family: 'merriweather';
-        font-size: 15px;
-        line-height: 24px;
-
+    p {
         margin-bottom: 24px;
 
         color: $light-black;
-        @media screen and(max-width: 960px)
-        {
+
+        font-family: "merriweather";
+        font-size: 15px;
+        line-height: 24px;
+        @media screen and(max-width: 960px) {
             font-size: 19px;
             line-height: 28px;
         }
-        @media screen and(max-width: 760px)
-        {
+        @media screen and(max-width: 760px) {
             font-size: 17px;
             line-height: 26px;
         }
     }
-    img
-    {
-        @media screen and(max-width: 960px)
-        {
+    img {
+        @media screen and(max-width: 960px) {
             width: 100%;
             height: auto;
         }
     }
-    blockquote
-    {
-        font-family: 'merriweather';
-        font-style: italic;
-
+    blockquote {
         position: relative;
 
         margin-top: 16px;
@@ -82,75 +66,63 @@
 
         color: #6f9ec0;
         background-color: #eef3fb;
-        &:before
-        {
+
+        font-family: "merriweather";
+        font-style: italic;
+        &:before {
             position: absolute;
             top: 25px;
             left: 18px;
 
-            content: '';
+            content: "";
 
             @include bg($double-arrow);
         }
     }
     ul,
-    ol
-    {
+    ol {
         padding: 0;
-        li
-        {
-            font-family: 'merriweather';
-            font-size: 15px;
-            line-height: 24px;
-
+        li {
             position: relative;
 
             margin-bottom: 30px;
-            @media screen and(max-width: 960px)
-            {
+
+            font-family: "merriweather";
+            font-size: 15px;
+            line-height: 24px;
+            @media screen and(max-width: 960px) {
                 font-size: 19px;
                 line-height: 28px;
             }
-            @media screen and(max-width: 760px)
-            {
+            @media screen and(max-width: 760px) {
                 font-size: 17px;
                 line-height: 26px;
             }
-            &:before
-            {
+            &:before {
                 position: absolute;
                 top: 4px;
                 left: 0;
             }
         }
     }
-    ul
-    {
-        li
-        {
+    ul {
+        li {
             padding-left: 40px;
-            &:before
-            {
-                content: '';
+            &:before {
+                content: "";
 
                 @include bg($blue-arrow);
             }
         }
     }
-    ol
-    {
+    ol {
         counter-reset: point; /* задаем переменную для счетчика */
-        li
-        {
+        li {
             padding-left: 45px;
-            &:last-child
-            {
+            &:last-child {
                 margin-bottom: 0;
             }
-            &:before
-            {
-                line-height: 30px;
-
+            &:before {
                 width: 30px;
                 height: 30px;
 
@@ -161,6 +133,8 @@
                 color: #9ccbec;
                 border: 2px solid #9ccbec;
                 border-radius: 50%;
+
+                line-height: 30px;
             }
         }
     }

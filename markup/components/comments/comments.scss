@@ -1,8 +1,6 @@
-.comments
-{
+.comments {
     margin-bottom: 46px;
-    @media screen and(max-width: 960px)
-    {
+    @media screen and(max-width: 960px) {
         margin-bottom: 15px;
     }
     &__title {
@@ -13,8 +11,7 @@
         font-size: 20px;
         font-weight: bold;
     }
-    img
-    {
+    img {
         width: 100%;
         height: auto;
     }
