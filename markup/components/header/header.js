@@ -1,7 +1,7 @@
 $(document).on('click','.header-search__icon',function() {
 	$(this).hide();
 	$('.header-search__wrapper').toggleClass('_active');
-	$('.header-search__form .input-form').toggle(300);
+	$('.header-search__form .input-form').slideToggle(300);
 	$('.overlay').removeClass('_menu').show();
 });	
 
