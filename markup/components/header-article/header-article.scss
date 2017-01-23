@@ -36,8 +36,8 @@
         font-family: "merriweather";
         font-weight: bold;
 
-        @extend ._middle-title;
         @extend .main-title;
+        @extend ._middle-title;
         @media screen and(max-width: 960px) {
             width: auto;
             margin-left: 0;
@@ -56,10 +56,10 @@
 
         font-size: 14px;
 
-        @extend ._triangle;
-        @extend ._purple;
-        @extend ._text-center;
         @extend ._middle;
+        @extend ._text-center;
+        @extend ._purple;
+        @extend ._triangle;
         &:after {
             position: absolute;
             top: 50%;
